@@ -1,102 +1,100 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("images/table.png");
-    background-size: cover;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+  background-image: url("images/table.png");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
 h1 {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 #message-el {
-    font-style: italic;
+  font-style: italic;
 }
-#btns{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#user-name{
-    margin: 15px 2px 15px 15px;
-    border-radius: 3px;
-    color: black;
-    padding: 5px;
-    width: 250px;
-    height: 30px;
-    border: none;
-    
-    
+#user-name {
+  margin: 15px 2px 15px 15px;
+  border-radius: 3px;
+  color: black;
+  padding: 5px;
+  width: 250px;
+  height: 30px;
+  border: none;
 }
 
 button {
-    color: #016f32;
-    background: goldenrod;
-    height: 35px;
-    width: 120px;
-    font-weight: bold;
-    border: none;
+  color: #016f32;
+  background: goldenrod;
+  height: 35px;
+  width: 120px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-size: 15px;
+}
+button:hover {
+  font-size: 18px;
+  height: 38px;
+  width: 130px;
+  opacity: 0.85;
+}
+#enter-el {
+  padding: 10px;
+  font-size: 15px;
+}
+#enter-el:hover {
+  font-size: 18px;
+}
+@media screen and (orientation: portrait) {
+  body {
+    font-size: 60px;
+  }
+  p {
+    margin: 150px 10px;
+  }
+  #user-name {
+    height: 70px;
+    width: 400px;
+    font-size: 50px;
     border-radius: 5px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    font-size: 15px;
-}
-button:hover{
-    font-size: 18px;
-    height: 38px;
-    width: 130px;
+    border: none;
+  }
+  button,
+  button:hover {
+    height: 100px;
+    width: 400px;
+    font-size: 50px;
+    border-radius: 12px;
+    opacity: 1;
+  }
+  #enter-el,
+  #enter-el:hover {
+    height: 50px;
+    width: 200px;
+    font-size: 40px;
+    border-radius: 10px;
+    padding-bottom: 60px;
+  }
+  button:active {
+    font-size: 55px;
+    height: 120px;
+    width: 430px;
     opacity: 0.85;
-}
-#enter-el{
-    padding: 10px;
-    font-size: 15px;
-;
-}
-#enter-el:hover{
-   font-size: 18px;
-}
-@media screen and (orientation: portrait){
-    body{
-        font-size: 60px;
-    }
-    p{
-        margin: 150px 10px; 
-    }
-    #user-name{
-        height: 70px;
-        width: 400px;
-        font-size: 50px;
-        border-radius: 5px;
-        border: none;
-
-    }
-    button{
-        height: 100px;
-        width: 400px;
-        font-size:50px;
-        border-radius: 12px;
-    }
-    #enter-el{
-        height: 50px;
-        width: 200px;
-        font-size: 40px;
-        border-radius: 10px;
-        padding-bottom: 60px; 
-    }
-    button:hover{
-        font-size: 55px;
-        height: 120px;
-        width: 430px;
-        opacity: 0.85;
-    }
-    #enter-el:hover{
-        font-size: 45px;
-        height: 55px;
-        width: 220px;
-     }
-    
-
+  }
+  #enter-el:active {
+    font-size: 45px;
+    height: 55px;
+    width: 220px;
+  }
 }
